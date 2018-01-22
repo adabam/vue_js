@@ -13,8 +13,8 @@ new Vue({
 			this.title = 'Hello';
 			return this.title;
 		},
-		increase: function () {
-			this.counter++;
+		increase: function (step, event) {
+			this.counter += event.clientX;
 		},
 		updateCoordinates: function (event) {
 			this.x = event.clientX;
