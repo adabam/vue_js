@@ -9,6 +9,9 @@ new Vue({
 		y: 0
 	},
 	methods: {
+		alertMe: function () {
+			alert('Aler!');
+		},
 		sayHello: function () {
 			this.title = 'Hello';
 			return this.title;
